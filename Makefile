@@ -4,12 +4,9 @@ LDFLAGS  := -L/usr/lib -lstdc++ -lm
 BUILD    := ./build
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/apps
-TARGET   := r3mind3r
+TARGET   := main
 INCLUDE  := -Iinclude/
 SRC      :=                      \
-	$(wildcard src/structs/*.cpp) \
-	$(wildcard src/utils/*.cpp) \
-	$(wildcard src/classes/*.cpp) \
 	$(wildcard src/*.cpp)         \
 
 OBJECTS := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
